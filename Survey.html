@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Adventures?</title>
+    <link rel="stylesheet" href="Survey.css" />
+</head>
+
+<body>
+    <h1 id="title">How do you get Around?</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Enter Your Name: <input id="name" name="name" type="text"
+                    placeholder="name" required /></label>
+            <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email"
+                    placeholder="email" required /></label>
+            <label for="number" id='number-label'>Enter Your Age: <input id="number" name="number" type="number"
+                    min="18" max="120" placeholder="number" required /></label>
+            <select id="dropdown">
+                <option name="">(select one)</option>
+                <option name="1">Where does it come from?</option>
+                <option name="2">Why do we use it?</option>
+            </select>
+            <label>Do you live in the US?</label>
+            <label>Yes<input type="radio" name="answer" value="Yes" class="inline" />
+                <label>No<input type="radio" name="answer" value="No" class="inline" /></label>
+        </fieldset>
+        <fieldset>
+            <legend>Forms of Transportation</legend>
+            <label for="vehicle1"><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="inline" /> I
+                have a
+                bike</label><br>
+            <label for="vehicle2"><input type="checkbox" id="vehicle2" name="vehicle2" value="Car" class="inline" /> I
+                have a
+                car</label><br>
+            <label for="vehicle3"><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" class="inline" /> I
+                have a
+                boat</label><br><br>
+            <label>Additional Comments</label>
+            <textarea></textarea>
+            <button id="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
